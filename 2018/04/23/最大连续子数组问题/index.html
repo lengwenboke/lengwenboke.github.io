@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="冷文博客">
 <meta property="og:description" content="最大连续子数组问题 问题：问题描述:给定一个数组A[0,…,n-1]，求A的最大连续子数组，使得该子数组的和最大。 例：1, -2, 3, 10, -4, 7, 2, -5 最大连续子数组:3, 10, -4, 7, 2 方法一：暴力求解  直接求解A[i,…j]的值 0≤ i &amp;lt; n i≤ j &amp;lt; n i,i+1…,j-1,j的最大长度为n 因此：时间复杂度$O(n^3)$ 代码实现">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-23T14:22:53.000Z">
+<meta property="og:updated_time" content="2018-04-23T14:44:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="最大连续子数组问题">
 <meta name="twitter:description" content="最大连续子数组问题 问题：问题描述:给定一个数组A[0,…,n-1]，求A的最大连续子数组，使得该子数组的和最大。 例：1, -2, 3, 10, -4, 7, 2, -5 最大连续子数组:3, 10, -4, 7, 2 方法一：暴力求解  直接求解A[i,…j]的值 0≤ i &amp;lt; n i≤ j &amp;lt; n i,i+1…,j-1,j的最大长度为n 因此：时间复杂度$O(n^3)$ 代码实现">
@@ -130,7 +130,7 @@
 <li><p>分治法算法复杂度分析</p>
 <ul>
 <li>算法的递推关系：$T(n)=2×T(\dfrac{n}{2}) + cn（c为常数）$</li>
-<li>若$n=2^k$,则有<br>$$\begin{eqnarray}T(n)<br>&amp;=&amp;2(2T(\dfrac{n}{4})+c\dfrac{n}{2})+cn\<br>&amp;=&amp;4T(\dfrac{n}{4}) + 2cn \<br>&amp;=&amp;4(2T(\dfrac{n}{8}) +c\dfrac{n}{4}) + 2cn\<br>&amp;=&amp;…\<br>&amp;=&amp;2kT(1)+kcn\<br>&amp;=&amp;an+cn\log{n} \<br>\because n=2^k &amp;\therefore k=\log_{2}{n}\<br>\end{eqnarray}$$</li>
+<li>若$n=2^k$,则有<br>$$\begin{eqnarray}T(n)<br>&amp;=&amp;2(2T(\dfrac{n}{4})+c\dfrac{n}{2})+cn\\<br>&amp;=&amp;4T(\dfrac{n}{4}) + 2cn \\<br>&amp;=&amp;4(2T(\dfrac{n}{8}) +c\dfrac{n}{4}) + 2cn\\<br>&amp;=&amp;…\\<br>&amp;=&amp;2kT(1)+kcn\\<br>&amp;=&amp;an+cn\log{n} \\<br>\because n=2^k &amp;\therefore k=\log_{2}{n}\\<br>\end{eqnarray}$$</li>
 <li>$若2^k&lt;n&lt;2^{(k+1)}，则T(2^k) ≤T(n)≤T(2^{(k+1)})$</li>
 <li>$所以得：T(n) = Ο(n\log{n})$</li>
 </ul>
@@ -517,6 +517,35 @@ var _hmt = _hmt || [];
 
 <!-- MathJax Begin -->
 <!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 <!-- MathJax End -->
