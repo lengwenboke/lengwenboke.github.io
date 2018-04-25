@@ -130,7 +130,15 @@
 <li><p>分治法算法复杂度分析</p>
 <ul>
 <li>算法的递推关系：$T(n)=2×T(\dfrac{n}{2}) + cn（c为常数）$</li>
-<li>若$n=2^k$,则有<br>$$\begin{eqnarray}T(n)<br>&amp;=&amp;2(2T(\dfrac{n}{4})+c\dfrac{n}{2})+cn\\<br>&amp;=&amp;4T(\dfrac{n}{4}) + 2cn \\<br>&amp;=&amp;4(2T(\dfrac{n}{8}) +c\dfrac{n}{4}) + 2cn\\<br>&amp;=&amp;…\\<br>&amp;=&amp;2kT(1)+kcn\\<br>&amp;=&amp;an+cn\log{n} \\<br>\because n=2^k &amp;\therefore k=\log_{2}{n}\\<br>\end{eqnarray}$$</li>
+<li>若$n=2^k$,则有<script type="math/tex; mode=display">\begin{eqnarray}T(n)
+&=&2(2T(\dfrac{n}{4})+c\dfrac{n}{2})+cn\\
+&=&4T(\dfrac{n}{4}) + 2cn \\
+&=&4(2T(\dfrac{n}{8}) +c\dfrac{n}{4}) + 2cn\\
+&=&...\\
+&=&2kT(1)+kcn\\
+&=&an+cn\log{n} \\
+\because n=2^k &\therefore k=\log_{2}{n}\\
+\end{eqnarray}</script></li>
 <li>$若2^k&lt;n&lt;2^{(k+1)}，则T(2^k) ≤T(n)≤T(2^{(k+1)})$</li>
 <li>$所以得：T(n) = Ο(n\log{n})$</li>
 </ul>
@@ -488,6 +496,8 @@ $(document).ready(function(){
 
 
 
+  
+  
 <!-- Analytics Begin -->
 
 

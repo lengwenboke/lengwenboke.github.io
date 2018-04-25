@@ -19,13 +19,19 @@
 <meta property="og:site_name" content="冷文博客">
 <meta property="og:description" content="输入与输出 输出  在学习Python之前先掌握Python的输入与输出会让后面的学习变得更加方便 先敲第一个例子吧：也就是我们的hello world   1print (&apos;hello&apos;)  有没有被吓到，就是这么简单，短小而精悍，只有一行代码，来看看执行结果吧   初学阶段我们先不用考虑为什么，后面慢慢就明白了，现在我们只需要知道我们给print中放个东西，它就会将其打印出来   输入  我们">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/04/22/">
-<meta property="og:image" content="http://yoursite.com/2018/04/22/">
-<meta property="og:updated_time" content="2018-04-22T09:50:24.383Z">
+<meta property="og:image" content="http://yoursite.com/2018/04/22/images/2-python入门-一-数值类型/1.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/22/images/2-python入门-一-数值类型/2.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/22/images/2-python入门-一-数值类型/3.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/22/images/2-python入门-一-数值类型/4.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/22/images/2-python入门-一-数值类型/6.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/22/images/2-python入门-一-数值类型/7.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/22/images/2-python入门-一-数值类型/9.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/22/images/2-python入门-一-数值类型/10.png">
+<meta property="og:updated_time" content="2018-04-25T09:39:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2.python入门(一)----数值类型">
 <meta name="twitter:description" content="输入与输出 输出  在学习Python之前先掌握Python的输入与输出会让后面的学习变得更加方便 先敲第一个例子吧：也就是我们的hello world   1print (&apos;hello&apos;)  有没有被吓到，就是这么简单，短小而精悍，只有一行代码，来看看执行结果吧   初学阶段我们先不用考虑为什么，后面慢慢就明白了，现在我们只需要知道我们给print中放个东西，它就会将其打印出来   输入  我们">
-<meta name="twitter:image" content="http://yoursite.com/2018/04/22/">
+<meta name="twitter:image" content="http://yoursite.com/2018/04/22/images/2-python入门-一-数值类型/1.png">
 
     
     <link rel="alternative" href="/atom.xml" title="冷文博客" type="application/atom+xml">
@@ -101,7 +107,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#输入与输出"><span class="toc-number">1.</span> <span class="toc-text">输入与输出</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#输入与输出"><span class="toc-number">1.</span> <span class="toc-text">输入与输出</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数值类型"><span class="toc-number">2.</span> <span class="toc-text">数值类型</span></a></li></ol>
 		
 		</div>
 		
@@ -114,19 +120,109 @@
 </li>
 <li><p>有没有被吓到，就是这么简单，短小而精悍，只有一行代码，来看看执行结果吧</p>
 </li>
-<li><img src="../" alt=""></li>
+<li><img src="../images/2-python入门-一-数值类型/1.png" alt=""></li>
 <li>初学阶段我们先不用考虑为什么，后面慢慢就明白了，现在我们只需要知道我们给print中放个东西，它就会将其打印出来</li>
 </ul>
 </li>
 <li><p>输入</p>
 <ul>
 <li><p>我们想从终端接受用户输入信息，就得用input这个函数，先看个例子吧</p>
-  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name = input (<span class="string">'please input your name'</span>)</span><br><span class="line"><span class="keyword">print</span> (<span class="string">'your name is '</span>,name)</span><br></pre></td></tr></table></figure>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name = input (<span class="string">'please input your name'</span>)</span><br><span class="line"><span class="keyword">print</span> (name)</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>这段代码的主要功能让用户输入一个名字，然后将其打印出来</p>
 </li>
 <li>执行结果</li>
-<li><img src="../" alt=""></li>
+<li><img src="../images/2-python入门-一-数值类型/2.png" alt=""><h1 id="数值类型"><a href="#数值类型" class="headerlink" title="数值类型"></a>数值类型</h1></li>
+</ul>
+</li>
+<li><p>整型(int)：即整数类型</p>
+<ul>
+<li>查看一个数据的类型用python内置函数<code>type(数据)</code></li>
+<li><p>例</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">number = <span class="number">100</span></span><br><span class="line"><span class="keyword">print</span> (type(number))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>结果：</p>
+</li>
+<li><img src="../images/2-python入门-一-数值类型/3.png" alt=""></li>
+<li>整型数据的输出</li>
+<li><p>先上一段代码：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">num = int(input(<span class="string">'please input a number：'</span>))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">'%d'</span>%(num))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>代码解释：</p>
+<ul>
+<li>int()：数据类型名直接加括号表示将括号内的数据转成该数据类型,那么该函数的作用相比已经不言而喻了吧，在此处用这个函数的目的是因为Python3中input()函数的返回值是个字符串，我们需要将其转为整型</li>
+<li>print (‘%d’%(num)):%d占位符,后面的%()里面即要往前面显示的东西,如：print (%’%d %d’%(a,b))</li>
+</ul>
+</li>
+<li>运行结果：</li>
+<li><p><img src="../images/2-python入门-一-数值类型/4.png" alt=""><br>大家可以试试如下代码：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">25</span></span><br><span class="line"><span class="keyword">print</span> (<span class="string">'%o'</span>%(num))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">'%d'</span>%(num))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">'%x'</span>%(num))</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>* 输出结果是不是很奇怪？
+* ![](../images/2-python入门-一-数值类型/5.png)
+* 来看看这段代码和之前主要的不同之处在于占位符,那么另外几个占位符是什么意思呢？
+* 常见占位符表
+
+    占位符|备注
+    --|
+    %o|8进制
+    %d|10进制
+    %x|16进制
+    %s|字符串
+    %f|浮点
+
+* 对照着表大家应该很明白为什么会有那样的输出了吧
+</code></pre><ul>
+<li><p>浮点型(float)：就是我们日常所说的小数</p>
+<ul>
+<li><p>同样先上一段代码</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">3.1415</span></span><br><span class="line"><span class="keyword">print</span> (type(num))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>输出结果：</p>
+</li>
+<li><img src="../images/2-python入门-一-数值类型/6.png" alt=""></li>
+<li>上面代码不做过多说明，相信大家都懂</li>
+<li>那么我如果有这么一个需求：打印一句话：’The CUP Occupancy rate is 65.580%’,大家可以想想该怎么打印？大家可以结合你们学过的C语言来想，最好自己在电脑上调试一下，看看输出的是不是这句话呢？</li>
+<li><p>好了，大家来看看答案吧</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (<span class="string">'The CUP Occupancy rate is %.3f%%'</span>%(<span class="number">65.58</span>))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行结果：</p>
+</li>
+<li><img src="../images/2-python入门-一-数值类型/7.png" alt=""></li>
+<li>我来解释一下吧<ul>
+<li>%f：以浮点类型输出，%.3f则是小数点后保留3位输出,%6.3f则是总共占6位，小数点后保留3位，以此类推，其他数据类型也是</li>
+<li>%%：%本身在Python中用特殊意义，则需要转义，Python不同于其他语言，Python的转义是%</li>
+</ul>
+</li>
+<li><p>来再看一段代码：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (<span class="number">3e-3</span>)</span><br><span class="line"><span class="keyword">print</span> (<span class="number">3e3</span>)</span><br><span class="line"><span class="keyword">print</span> (<span class="number">3e+3</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>* 输出结果
+* ![](../images/2-python入门-一-数值类型/8.png)
+* 这个则是浮点型的另一种表示：AeB 即 A x 10^B
+</code></pre><ul>
+<li><p>复数类型(complex):</p>
+<ul>
+<li><p>同样上一段代码</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">2</span>+<span class="number">3j</span></span><br><span class="line"><span class="keyword">print</span> (type(num))</span><br><span class="line"><span class="keyword">print</span> (num)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>输出结果：</p>
+</li>
+<li><img src="../images/2-python入门-一-数值类型/9.png" alt=""></li>
+<li>同样上面代码不解释</li>
+<li><p>看几个好玩的</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">2</span>+<span class="number">3j</span></span><br><span class="line"><span class="keyword">print</span> (num.real) <span class="comment"># 实部</span></span><br><span class="line"><span class="keyword">print</span> (num.imag) <span class="comment"># 虚部</span></span><br><span class="line"><span class="keyword">print</span> (num.conjugate()) <span class="comment">#共轭复数</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>输出结果</p>
+</li>
+<li><img src="../images/2-python入门-一-数值类型/10.png" alt=""></li>
+<li>看到代码中的#没有，在Python中#代表的是行注释</li>
 </ul>
 </li>
 </ul>
@@ -194,7 +290,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#输入与输出"><span class="toc-number">1.</span> <span class="toc-text">输入与输出</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#输入与输出"><span class="toc-number">1.</span> <span class="toc-text">输入与输出</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数值类型"><span class="toc-number">2.</span> <span class="toc-text">数值类型</span></a></li></ol>
  
   </div>
 
